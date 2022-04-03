@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir.eot");
+  src: url("../fonts/Vazir.woff2") format("off2"),
+    url("../fonts/Vazir.woff") format("woff"),
+    url("../fonts/Vazir.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Vazir", Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  color: darkcyan;
+}
+
+a.icon{
+  color: white;
+}
+/* Utility Class */
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.bg-dark {
+  background: #333;
+  color: white;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.text-primary {
+  color: orange;
+}
+
+.l-heading {
+  font-size: 2rem;
+}
+
+.m-heading {
+  font-size: 1rem;
+}
+
+.bold {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  background: darkgoldenrod;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  color: white;
+  background: orange;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.list {
+  margin: 0.5rem;
+  list-style-type: none;
+}
+
+.list li {
+  border-bottom: #444 dotted 1px;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+/*  */
+
+/* Navbar */
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction: row-reverse;
+  list-style-type: none;
+  align-items: center;
+}
+
+#navbar ul li a {
+  color: white;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+  transition: 0.3s;
+}
+
+#navbar ul li a:hover {
+  background-color: darkcyan;
+  color: white;
+  border-radius: 5px;
+}
+
+/*  */
+/* Header */
+
+#showcase {
+  background: #333 url(../Images/background2.jpg) no-repeat center center/cover;
+  color: white;
+  height: 100vh;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* */
+
+/* Section */
+
+#section1 .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#section1 .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#section1 .items .item i {
+  background: orange;
+  padding: 1.25rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+}
+
+#section2 {
+  display: flex;
+}
+
+#section2 div {
+  flex: 1;
+}
+
+#section2 .img {
+  background: url(../Images/background.jpg) no-repeat center center/cover;
+}
+
+#section2 .content {
+  text-align: right;
+}
+
+#section3 .items {
+  display: flex;
+}
+
+#section3 .items div {
+  flex: 1;
+}
+
+#section3 .items img {
+  border-radius: 50px;
+  display: block;
+  margin: auto;
+  width: 62%;
+  height: 86%;
+  transition: 0.5ms;
+  cursor: pointer;
+}
+
+#section3 .items img:hover{
+  transform: scale(0.5rem);
+}
+
+/* */
+
+/* Contact */
+
+#contact {
+  display: flex;
+  justify-content: center;
+}
+
+#contact .contact-form {
+  flex-basis: 600px;
+  text-align: right;
+}
+
+#contact .contact-form label {
+  display: block;
+  margin: 1rem 0;
+}
+
+#contact .contact-form input ,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+#contact .contact-form textarea{
+  text-align: right;
+  margin: 1rem 0;
+  font-size: 1.25rem;
+}
+/* */
+
+/* Footer */
+
+#main-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* */
